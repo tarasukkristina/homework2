@@ -14,16 +14,17 @@ public class HW1 {
         int x = scanner.nextInt();
         int y = scanner.nextInt();
         pointInsideOrOutside(r, a, b, x, y);
-
     }
 
     public static void pointInsideOrOutside(int r, int a, int b, int x, int y) {
         int n = (x - a) * (x - a) + (y - b) * (y - b);
         int m = r * r;
-        if (n == m) {
+        if (n < m) {
             System.out.println("The point inside circle");
-        } else {
+        } else if (n > m) {
             System.out.println("The point is outside the circle");
+        } else {
+            System.out.println("The point is on the circle");
         }
     }
 }

@@ -20,10 +20,11 @@ public class HW2 {
         } else if (discrim == 0) {
             double x = -(double) b / (2 * a);
             System.out.println("Quadratic equation has one root: " + x);
-        } else if (discrim > 0) {
+        } else {
             double x1 = ((-b) + Math.sqrt(discrim)) / (2 * a);
             double x2 = ((-b) - Math.sqrt(discrim)) / (2 * a);
             System.out.println("Quadratic equation has two roots: " + x1 + " and " + x2);
         }
     }
 }
+
